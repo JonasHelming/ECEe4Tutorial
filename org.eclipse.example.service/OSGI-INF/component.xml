@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" enabled="true" immediate="false" name="org.eclipse.example.services">
+   <service>
+      <provide interface="org.eclipse.example.e4.model.ContactService"/>
+   </service>
+   <implementation class="org.eclipse.example.services.ContactsServiceImpl"/>
+
+</scr:component>
