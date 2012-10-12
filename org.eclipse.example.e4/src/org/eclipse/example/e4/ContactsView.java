@@ -7,18 +7,16 @@ import javax.inject.Inject;
 import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.e4.ui.workbench.modeling.ESelectionService;
-import org.eclipse.example.e4.model.ContactService;
 import org.eclipse.example.e4.model.ModelFactory;
 import org.eclipse.example.e4.model.provider.SWTExampleHelper;
 
 
+@SuppressWarnings("restriction")
 public class ContactsView {
 
 	@Inject
 	ESelectionService selectionService;
 	
-	@Inject
-	ContactService contactService;
 	
 	private TreeViewer viewer;
 	
@@ -30,7 +28,7 @@ public class ContactsView {
 	
 	@PostConstruct
 	void init(){
-		viewer.setInput(contactService.getRootGroup());
+		viewer.setInput(ModelFactory.eINSTANCE.createExampleModel());
 		SWTExampleHelper.connectTreeViewerWithSelectionService(viewer, selectionService);
 	}
 	

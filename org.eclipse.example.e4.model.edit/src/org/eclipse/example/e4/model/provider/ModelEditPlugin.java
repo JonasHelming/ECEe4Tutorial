@@ -3,7 +3,6 @@
 package org.eclipse.example.e4.model.provider;
 
 import org.eclipse.emf.common.EMFPlugin;
-
 import org.eclipse.emf.common.util.ResourceLocator;
 
 /**

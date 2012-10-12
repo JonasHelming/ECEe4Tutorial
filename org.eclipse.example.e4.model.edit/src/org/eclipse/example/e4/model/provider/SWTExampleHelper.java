@@ -13,6 +13,7 @@ import org.eclipse.jface.viewers.SelectionChangedEvent;
 import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.swt.widgets.Composite;
 
+@SuppressWarnings("restriction")
 public abstract class SWTExampleHelper {
 
 	public static TreeViewer createTreeViewer(Composite parent) {
