@@ -50,7 +50,6 @@ public class ContactsView {
 	@Inject
 	@Optional
 	void newContactAdded(@UIEventTopic("contacts/*") Contact newContact) {
-		viewer.refresh();
 		viewer.setSelection(new StructuredSelection(newContact));
 	}
 
