@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="E4 Example" uid="e4example" id="org.eclipse.example.e4.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" useFeatures="false" includeLaunchers="true">
+<product name="E4 Example" uid="e4example" id="org.eclipse.example.e4.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
 
    <launcherArgs>
+      <programArgs>-clearPersistedState</programArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
 
    <plugins>
       <plugin id="com.ibm.icu"/>
@@ -74,6 +85,16 @@
       <plugin id="org.w3c.dom.smil"/>
       <plugin id="org.w3c.dom.svg"/>
    </plugins>
+
+   <features>
+      <feature id="org.eclipse.e4.rcp"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="org.eclipse.example.e4.feature"/>
+      <feature id="org.eclipse.emf.edit.ui"/>
+      <feature id="org.eclipse.emf.edit"/>
+      <feature id="org.eclipse.emf.common.ui"/>
+   </features>
 
 
 </product>

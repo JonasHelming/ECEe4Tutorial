@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_fpz7QLVvEeGV7u1rdFDubQ" elementId="org.eclipse.example.e4.application">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fpz7QLVvEeGV7u1rdFDubQ" elementId="org.eclipse.example.e4.application">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_g4R5gLVvEeGV7u1rdFDubQ" elementId="org.eclipse.example.e4.trimmedwindow.0">
     <children xsi:type="basic:PartSashContainer" xmi:id="_mb6hILYzEeGMbL5tzip2zw" elementId="org.eclipse.example.e4.partsashcontainer.0" horizontal="true">
-      <children xsi:type="basic:Part" xmi:id="_aBt04LVwEeGV7u1rdFDubQ" elementId="org.eclipse.example.e4.part.0" contributionURI="bundleclass://org.eclipse.example.e4/org.eclipse.example.e4.ContactsView"/>
-      <children xsi:type="basic:Part" xmi:id="_oq8kgLYzEeGMbL5tzip2zw" elementId="org.eclipse.example.e4.part.1" contributionURI="bundleclass://org.eclipse.example.e4/org.eclipse.example.e4.DetailsView"/>
+      <children xsi:type="basic:PartStack" xmi:id="_TYFR8BqbEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.partstack.0">
+        <children xsi:type="basic:Part" xmi:id="_aBt04LVwEeGV7u1rdFDubQ" elementId="org.eclipse.example.e4.part.0" contributionURI="bundleclass://org.eclipse.example.e4/org.eclipse.example.e4.parts.ContactsView" label="Contacts"/>
+      </children>
+      <children xsi:type="basic:PartStack" xmi:id="_T6HoABqbEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.partstack.1">
+        <children xsi:type="basic:Part" xmi:id="_oq8kgLYzEeGMbL5tzip2zw" elementId="org.eclipse.example.e4.part.1" contributionURI="bundleclass://org.eclipse.example.e4/org.eclipse.example.e4.parts.DetailsView" label="Details"/>
+      </children>
     </children>
+    <mainMenu xmi:id="_2CsCEBqWEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_4bN_sBqWEeKVWJkcb1cPZw" elementId="org.eclipse.ui.file.menu" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_7k34QBqWEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.handledmenuitem.0" label="Exit" command="_SE1ToBqWEeKVWJkcb1cPZw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_nV_8cBqcEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.handledmenuitem.1" label="Save All" iconURI="platform:/plugin/org.eclipse.example.e4/icons/save.gif" command="_mt1lsBqbEeKVWJkcb1cPZw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_NdVUUBqnEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.handledmenuitem.2" label="New Contact..." command="_HHX30BqnEeKVWJkcb1cPZw"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_6zhFEBqcEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.trimbar.0">
+      <children xsi:type="menu:ToolBar" xmi:id="_7oLcMBqcEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8cRyoBqcEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.handledtoolitem.0" label="Save All" iconURI="platform:/plugin/org.eclipse.example.e4/icons/save.gif" command="_mt1lsBqbEeKVWJkcb1cPZw"/>
+      </children>
+    </trimBars>
   </children>
+  <handlers xmi:id="_VF3bsBqWEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.handler.0" contributionURI="bundleclass://org.eclipse.example.e4/org.eclipse.example.e4.handlers.ExitHandler" command="_SE1ToBqWEeKVWJkcb1cPZw"/>
+  <handlers xmi:id="_qrwz0BqbEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.handler.1" contributionURI="bundleclass://org.eclipse.example.e4/org.eclipse.example.e4.handlers.SaveHandler" command="_mt1lsBqbEeKVWJkcb1cPZw"/>
+  <handlers xmi:id="_JHdgQBqnEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.handler.2" contributionURI="bundleclass://org.eclipse.example.e4/org.eclipse.example.e4.handlers.NewContactHandler" command="_HHX30BqnEeKVWJkcb1cPZw"/>
+  <bindingTables xmi:id="_0yA0oBqnEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.bindingtable.0" bindingContext="_4pvwoBqmEeKVWJkcb1cPZw">
+    <bindings xmi:id="_1l3TcBqnEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.keybinding.0" keySequence="M1+N" command="_HHX30BqnEeKVWJkcb1cPZw"/>
+    <bindings xmi:id="__X4nIBqnEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.keybinding.1" keySequence="M1+S" command="_mt1lsBqbEeKVWJkcb1cPZw"/>
+    <bindings xmi:id="_BcsXgBqoEeKVWJkcb1cPZw" elementId="org.eclipse.example.e4.keybinding.2" keySequence="M1+Q" command="_SE1ToBqWEeKVWJkcb1cPZw"/>
+  </bindingTables>
+  <rootContext xmi:id="_4pvwoBqmEeKVWJkcb1cPZw" elementId="org.eclipse.ui.contexts.windowAndDialog" name="In WIndows and Dialogs">
+    <children xmi:id="_9Y_G8BqmEeKVWJkcb1cPZw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+    <children xmi:id="_APSlsBqnEeKVWJkcb1cPZw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+  </rootContext>
+  <commands xmi:id="_SE1ToBqWEeKVWJkcb1cPZw" elementId="org.eclipse.ui.file.exit" commandName="Exit"/>
+  <commands xmi:id="_mt1lsBqbEeKVWJkcb1cPZw" elementId="org.eclipse.ui.file.save" commandName="Save"/>
+  <commands xmi:id="_HHX30BqnEeKVWJkcb1cPZw" elementId="org.eclipse.ui.file.new" commandName="New Contact"/>
   <addons xmi:id="_fpz7QbVvEeGV7u1rdFDubQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_fpz7QrVvEeGV7u1rdFDubQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_fpz7Q7VvEeGV7u1rdFDubQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
