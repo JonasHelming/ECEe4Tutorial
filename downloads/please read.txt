@@ -1,0 +1,1 @@
+Please get a Eclipse instance for you OS at http://downloads.efxclipse.org/tutorial/sdks/
