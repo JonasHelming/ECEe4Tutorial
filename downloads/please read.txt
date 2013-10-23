@@ -1,3 +1,25 @@
-Please download the three zip files containing example solutions. Just keep them ready for the tutorial.
+Hi,
 
-Please get a Eclipse instance for you OS at http://downloads.efxclipse.org/tutorial/sdks/
+Thank you for registering for the tutorial “What every developer should know about Eclipse 4” at EclipseCon Europe 2013. We are overwhelmed by number of registrations and are looking forward to a great event. As the tutorial will be hands-on, we kindly ask you to bring your own laptop and follow the following preparation steps. Due to the number of participants, there is absolutely no way to get the required installation and examples at the beginning of the tutorial without losing very much time. There will be NO working WiFi, NOT enough USB Sticks and NO GMS connection. So PLEASE get your installation working before you travel to EclipseCon. Sorry for the fearmongering, but in 2013, we are just not used to this situation . If you have any problems with one of the following steps, please contact me in advance. We will help you to get everything working, but we will not have the time at the beginning of the tutorial.
+1.	Installation Eclipse
+Please download a fresh “Eclipse Modeling Tools” for your OS from http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/keplersr1
+Please stick to this version, we will not have the time to solve any potential incompatibility issues.
+Please unzip the download, start Eclipse and chose a fresh (empty) workspace. Please close the “Welcome Screen” and you should see an empty workspace now.
+2.	Installation Eclipse 4 Tools
+The tooling to create Eclipse 4 applications are not (yet) part of any Eclipse package. Therefore you need to install it. You will require an internet connection for this step. In your running Eclipse, please open the Menu “Help”=> “Install new software”. A dialog opens up. Please enter the following URL on top in the text field “work with” and click on “Add”. In the second dialog enter a name “e4 Tools” and click on OK.
+http://download.eclipse.org/e4/downloads/drops/R-0.14-201306242200/repository
+A list of installable features will be shown. Please select “Eclipse 4 core tools” only and click on “Next” (at the bottom). The next page shows the selected items (only one), please click “Next” again. On the final page, you need to agree to the license agreement and click on “Finish”.
+The following download and installation might take a few seconds, once it is completed, you will be asked to restart Eclipse, please do so.
+3.	Download examples and slides
+Please download the following file and unzip it anywhere on your machine, where you can access it. The archive contains the slides of the tutorial as PDF, as well as the code examples. You don’t need to unzip start.zip or solution1-3.zip
+4.	Import the start code
+We are almost done!  To ensure that everything is working, please launch the example application once. If there any problems, you will identify them in advance, enabling us to help you. The start.zip already contains a simple application, during the tutorial, we will fill this application with new features.
+In your running Eclipse, please select the menu “File”=>”Import”. In the dialog, please select “General”=>”Existing Projects into workspace” and click on “Next”. On top, please chose the option “Select archive file” and click on “Browse”. Please select the downloaded archive “start.zip”. Below the dialog should show 5 selected projects now, please click on finish.
+5.	Start the example application once
+There should be 5 bundles in your workspace now. Please unfold the bundle “org.eclipse.example.e4”. On the root level, there is a file “e4example.product”, please open it (double click). The file is shown in the editor area now. Please launch the product by clicking the green arrow in the top-right corner of the opened editor (Tooltip “Launch an Eclipse Application”). An empty window should open up. If this works, you are completely set-up. We will explain all following steps during the tutorial.
+Thank you in advance for preparing this, it will enable us to use the time as effective as possible.
+We are looking forward to meet you at EclipseCon, please contact me in case of any questions or issues.
+Best Regards
+Jonas and Eugen
+
+
