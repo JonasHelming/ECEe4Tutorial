@@ -20,6 +20,6 @@ There should be 5 bundles in your workspace now. Please unfold the bundle “org
 Thank you in advance for preparing this, it will enable us to use the time as effective as possible.
 We are looking forward to meet you at EclipseCon, please contact me in case of any questions or issues.
 Best Regards
-Jonas and Eugen
+Jonas
 
 
